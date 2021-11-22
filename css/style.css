@@ -1017,25 +1017,31 @@ button.learn-more:hover .button-text {
   height: 400px;
 }
 .mediaAndPress.slick-initialized .slick-slide {
-  padding: 0 3px;
+  padding: 0 6px;
 }
 .mediaAndPress .slick-slide img {
   display: block;
   height: 100%;
+  object-fit: fill;
+}
+
+.hiedInWeb {
+  display: none;
 }
 .blog.slick-dotted.slick-slider {
   min-height: 500px;
   display: flex;
   align-items: center;
-  background-color: #ddbe75a6;
+  background-color: #ffffff;
   width: 86%;
   margin-left: auto;
-  height: 80vh;
+  height: 100vh;
 }
 .blogs {
   position: relative;
 }
 .blogs .blogTitle {
+  border-radius: 0 10px 10px 0;
   position: absolute;
   left: 0;
   width: 18%;
@@ -1049,6 +1055,18 @@ button.learn-more:hover .button-text {
 }
 .blog div {
   position: relative;
+  height: auto;
+}
+.viewMoreBtn {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.viewMoreBtn:hover {
+  color: var(--color3);
+  transform: translateX(5px) !important;
 }
 .blog div p {
   width: fit-content;
@@ -1076,9 +1094,9 @@ button.learn-more:hover .button-text {
   height: 400px;
 }
 .imgWrapper {
-  background: #fff;
+  background: #ddbe75a6;
   border-radius: 10px;
-  padding: 3rem;
+  padding: 1.5rem;
   max-width: 600px;
   min-width: 400px;
   min-height: 500px;
@@ -1165,7 +1183,7 @@ button.learn-more:hover .button-text {
     top: 60%;
   }
   .blog.slick-dotted.slick-slider {
-    height: 100vh !important;
+    height: 70vh !important;
   }
   .blogTitle h1 {
     font-size: 3.6rem;
@@ -1212,6 +1230,11 @@ button.learn-more:hover .button-text {
   }
   .blogImg {
     width: 100%;
+  }
+  .hiedInWeb {
+    display: block;
+    text-align: center;
+    margin-bottom: 0 !important;
   }
 }
 /* //// #blog ###### */
