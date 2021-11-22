@@ -11,11 +11,11 @@ html {
 }
 .og {
   color: var(--color1);
-  font-size: 3.6em;
+  font-size: 30px;
   font-weight: 600;
   display: flex;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 :root {
   --color1: #d0b36f;
@@ -888,7 +888,6 @@ button.learn-more:hover .button-text {
   }
 }
 /* //// #FaceChart ###### */
-
 /*  #Main Services ###### */
 
 #main-services {
@@ -1003,16 +1002,32 @@ button.learn-more:hover .button-text {
     opacity: 1;
   }
 }
-
+/* //// #Main Services ###### */
 /* blog */
-.slick-initialized .slick-slide {
-  /* max-height: 500px; */
+
+.ourGuest.slick-initialized .slick-slide {
+  padding: 0 1rem;
+  height: 400px;
+}
+.ourGuest .slick-slide img {
+  height: 100%;
+}
+.mediaAndPress .slick-slider .slick-list,
+.slick-slider .slick-track {
+  height: 400px;
+}
+.mediaAndPress.slick-initialized .slick-slide {
+  padding: 0 3px;
+}
+.mediaAndPress .slick-slide img {
+  display: block;
+  height: 100%;
 }
 .blog.slick-dotted.slick-slider {
   min-height: 500px;
   display: flex;
   align-items: center;
-  background-color: var(--color1);
+  background-color: #ddbe75a6;
   width: 86%;
   margin-left: auto;
   height: 80vh;
@@ -1199,7 +1214,7 @@ button.learn-more:hover .button-text {
     width: 100%;
   }
 }
-/* //// #Main Services ###### */
+/* //// #blog ###### */
 
 #services {
   background-color: #fff;
@@ -1595,10 +1610,17 @@ footer .osperb:hover {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-  grid-row-gap: 40px;
+  grid-gap: 35px;
+  grid-row-gap: 35px;
+}
+/* .grid .item:hover {
+  transform: translateY(-4px);
+} */
+.grid .item img:hover {
+  transform: translateY(-3px) scale(1.051);
 }
 .grid .item {
+  transition: all 0.3s ease-in-out;
   min-width: none;
   min-height: 200px;
   align-items: stretch;
@@ -1965,7 +1987,7 @@ footer .osperb:hover {
   display: block;
   margin: 0 auto;
 }
-h3 {
+/* h3 {
   background: #fff;
   color: #3498db;
   font-size: 36px;
@@ -1974,4 +1996,4 @@ h3 {
   padding: 2%;
   position: relative;
   text-align: center;
-}
+} */

@@ -91,27 +91,39 @@ $(document).ready(function () {
     setTimeout(function () {
       $("#main-services #main-services-tab3").attr("checked", false);
       $("#main-services #main-services-tab1").attr("checked", true);
+      $("#main-services #main-services-tab1").click()
     }, 3000);
     setTimeout(function () {
       $("#main-services #main-services-tab1").attr("checked", false);
       $("#main-services #main-services-tab2").attr("checked", true);
+      $("#main-services #main-services-tab2").click()
+
     }, 6000);
     setTimeout(function () {
       $("#main-services #main-services-tab2").attr("checked", false);
       $("#main-services #main-services-tab3").attr("checked", true);
+      $("#main-services #main-services-tab3").click()
+
     }, 9000);
+
     setInterval(function () {
       setTimeout(function () {
         $("#main-services #main-services-tab3").attr("checked", false);
         $("#main-services #main-services-tab1").attr("checked", true);
+        $("#main-services #main-services-tab1").click()
+
       }, 3000);
       setTimeout(function () {
         $("#main-services #main-services-tab1").attr("checked", false);
         $("#main-services #main-services-tab2").attr("checked", true);
+        $("#main-services #main-services-tab2").click()
+
       }, 6000);
       setTimeout(function () {
         $("#main-services #main-services-tab2").attr("checked", false);
         $("#main-services #main-services-tab3").attr("checked", true);
+        $("#main-services #main-services-tab3").click()
+
       }, 9000);
     }, 9000);
   })();
