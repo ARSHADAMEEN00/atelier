@@ -23,7 +23,7 @@ $(document).ready(function () {
   }
 
 
-  // sameHeight(".imgWrapper");
+  sameHeight(".imgWrapper");
   sameHeight(".ourGuest .slick-slide img");
   // sameHeight(".mediaAndPress .slick-slide img");
 
