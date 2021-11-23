@@ -11,25 +11,25 @@ $(window).on("load", function () {
 });
 $(document).ready(function () {
 
-function sameHeight(selector){
-  let h = 0;
-  $(selector).each(function () {
-    let child = $(this);
-    if (h < child.innerHeight()) {
-      h = child.innerHeight();
-    }
-  });
-  $(selector).innerHeight(h);
-}
+  function sameHeight(selector) {
+    let h = 0;
+    $(selector).each(function () {
+      let child = $(this);
+      if (h < child.innerHeight()) {
+        h = child.innerHeight();
+      }
+    });
+    $(selector).innerHeight(h);
+  }
 
 
-sameHeight(".imgWrapper");
-sameHeight(".ourGuest .slick-slide img");
-// sameHeight(".mediaAndPress .slick-slide img");
+  // sameHeight(".imgWrapper");
+  sameHeight(".ourGuest .slick-slide img");
+  // sameHeight(".mediaAndPress .slick-slide img");
 
 
 
-    
+
 
 
   $("#contact form").submit(function (event) {

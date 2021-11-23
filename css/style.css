@@ -1028,7 +1028,7 @@ button.learn-more:hover .button-text {
   /* object-fit: fill; */
   height: 399px;
 }
-.mediaAndPress .slick-slide{
+.mediaAndPress .slick-slide {
   width: auto !important;
 }
 
@@ -1088,6 +1088,25 @@ button.learn-more:hover .button-text {
   z-index: 9;
   left: -10%;
   top: 60%;
+}
+.mediaAndPress .slick-next {
+  right: 2rem !important;
+  z-index: 9;
+}
+.mediaAndPress .slick-prev {
+  left: 2rem !important;
+  z-index: 9;
+}
+.ourGuest .slick-prev {
+  left: 2rem !important;
+  z-index: 9;
+}
+.ourGuest .slick-next {
+  right: 2rem !important;
+  z-index: 9;
+}
+.mediaAndPress .slick-list {
+  height: 400px;
 }
 .blog .slick-next {
   right: 105%;
@@ -1184,9 +1203,9 @@ button.learn-more:hover .button-text {
 }
 
 @media screen and (min-width: 1670px) {
-  .blog.slick-dotted.slick-slider {
+  /* .blog.slick-dotted.slick-slider {
     height: 70vh !important;
-  }
+  } */
 }
 @media screen and (max-width: 1670px) {
   .blog .slick-prev {
@@ -1220,6 +1239,10 @@ button.learn-more:hover .button-text {
   }
 }
 @media screen and (max-width: 768px) {
+  .blog.slick-dotted.slick-slider {
+    height: auto !important;
+    font-weight: 400;
+  }
   .blog div p {
     font-size: 16px;
   }
