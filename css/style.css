@@ -1011,6 +1011,9 @@ button.learn-more:hover .button-text {
 }
 .ourGuest .slick-slide img {
   height: 100%;
+  /* 
+  object-fit: cover;
+  height: 400px; */
 }
 .mediaAndPress .slick-slider .slick-list,
 .slick-slider .slick-track {
@@ -1171,6 +1174,11 @@ button.learn-more:hover .button-text {
   font-size: 21px;
   color: var(--color3);
 }
+.noPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 @media screen and (min-width: 1670px) {
   .blog.slick-dotted.slick-slider {
     height: 70vh !important;
@@ -1208,6 +1216,24 @@ button.learn-more:hover .button-text {
   }
 }
 @media screen and (max-width: 768px) {
+  .blog div p {
+    font-size: 16px;
+  }
+  .ourGuest .slick-slide img {
+    height: 100%;
+    /* object-fit: contain; */
+  }
+  .ourGuest.slick-initialized .slick-slide {
+    padding: 0 1rem;
+    height: 280px;
+  }
+  .ourGuest .slick-slider .slick-list,
+  .slick-slider .slick-track {
+    height: 280px;
+  }
+  .ourGuest .slick-list {
+    height: 300px;
+  }
   .blog .slick-next:before,
   .blog .slick-prev:before,
   .blogs .blogTitle {
@@ -1216,10 +1242,12 @@ button.learn-more:hover .button-text {
   .imgWrapper {
     min-width: auto;
     min-height: auto;
-    width: 300px;
+    width: 280px;
     height: fit-content;
   }
-
+  .blog.slick-initialized .slick-slide {
+    padding: 6px !important;
+  }
   .blog.slick-dotted.slick-slider {
     width: 100%;
     margin-left: 0;
@@ -1638,13 +1666,13 @@ footer .osperb:hover {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 35px;
-  grid-row-gap: 35px;
+  grid-gap: 15px;
+  grid-row-gap: 15px;
 }
 /* .grid .item:hover {
   transform: translateY(-4px);
 } */
-.grid .item img:hover {
+.grid .item:hover {
   transform: translateY(-3px) scale(1.051);
 }
 .grid .item {
@@ -1652,10 +1680,11 @@ footer .osperb:hover {
   min-width: none;
   min-height: 200px;
   align-items: stretch;
+  border: 5px solid var(--color1);
 }
 .grid .item img {
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .subSections h5 {
   padding: 2rem 0;
