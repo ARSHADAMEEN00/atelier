@@ -1171,6 +1171,11 @@ button.learn-more:hover .button-text {
   font-size: 21px;
   color: var(--color3);
 }
+@media screen and (min-width: 1670px) {
+  .blog.slick-dotted.slick-slider {
+    height: 70vh !important;
+  }
+}
 @media screen and (max-width: 1670px) {
   .blog .slick-prev {
     z-index: 9;
@@ -1183,7 +1188,7 @@ button.learn-more:hover .button-text {
     top: 60%;
   }
   .blog.slick-dotted.slick-slider {
-    height: 70vh !important;
+    height: 90vh !important;
   }
   .blogTitle h1 {
     font-size: 3.6rem;
