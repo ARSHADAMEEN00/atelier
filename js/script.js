@@ -10,6 +10,28 @@ $(window).on("load", function () {
   new WOW({ mobile: false }).init();
 });
 $(document).ready(function () {
+
+function sameHeight(selector){
+  let h = 0;
+  $(selector).each(function () {
+    let child = $(this);
+    if (h < child.innerHeight()) {
+      h = child.innerHeight();
+    }
+  });
+  $(selector).innerHeight(h);
+}
+
+
+sameHeight(".imgWrapper");
+sameHeight(".ourGuest .slick-slide img");
+// sameHeight(".mediaAndPress .slick-slide img");
+
+
+
+    
+
+
   $("#contact form").submit(function (event) {
     swal({
       title: "Sending...!",

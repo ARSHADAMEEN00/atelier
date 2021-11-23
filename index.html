@@ -1076,15 +1076,16 @@
     $(document).on('ready', function () {
       $(".ourGuest").slick({
         infinite: true,
+        loop:true,
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
         arrows: true,
         autoplay: true,
         autoplaySpeed: 4000,
-        centerMode: true,
-        // variableWidth: true,
-        // centerPadding:'40px',
+        centerMode: false,
+        variableWidth: true,
+        centerPadding:'40px',
         responsive: [
           {
             breakpoint: 1200,
